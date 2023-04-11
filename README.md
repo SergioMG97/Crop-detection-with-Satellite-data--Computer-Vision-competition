@@ -2,7 +2,7 @@
 This repository contains the implementation of a deep learning model that predicts the presence of rice crops at a given location in the An Giang province, Mekong Delta, Vietnam. The model is based on the ResNet-50 architecture and trained on optical data from the Sentinel-2 satellite. This project was developed as part of the EY/Microsoft 2023 Open Science Data Challenge, with the goal of contributing to solutions for world hunger and improving food security.
 
 ## Introduction
-The study of rice crops using satellite data is a well-established practice, with researchers and government organizations routinely employing such data for identifying crop locations and forecasting yields. By leveraging the increasing availability of satellite data, along with advancements in cloud computing and machine learning, we can improve our understanding of agriculture from space.
+The study of rice crops using satellite data is a well-established practice, with researchers and government organizations routinely employing such data for identifying crop locations and forecasting yields.
 
 This project aims to predict the presence or non-presence of rice crops at a given location. The developed model uses satellite images from the European Copernicus Sentinel-2 program and is fine-tuned with images of regions in the An Giang province of Vietnam.
 
