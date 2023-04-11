@@ -8,13 +8,17 @@ This project aims to predict the presence or non-presence of rice crops at a giv
 
 ## Dataset
 The dataset is prepared by downloading Sentinel-2 satellite images for different locations and filtering them based on a sparsity threshold after applying Cloud filtering. The images are then saved as HDF5 files containing various bands and indices, such as NDVI and NDMI. The dataset is then split into training and validation sets using K-fold cross-validation. The included Jupyter notebook contains helper functions for downloading, processing, and cleaning the images.
+
 The input images used for training and evaluation are processed to include three channels: NDVI, NDMI, and NIR bands. These channels were chosen based on their relevance to vegetation content, which are important factors in identifying rice fields.
 * NDVI (Normalized Difference Vegetation Index): This index is calculated using the Red and Near-Infrared (NIR) bands of the satellite images. It is widely used to assess the presence and health of vegetation. Higher NDVI values indicate healthy and dense vegetation, while lower values signify sparse or no vegetation.
 * NDMI (Normalized Difference Moisture Index): This index is calculated using the Near-Infrared (NIR) and Short-Wave Infrared (SWIR) bands of the satellite images. It is used to estimate the water content in vegetation. Higher NDMI values indicate higher moisture content, while lower values signify less moisture or no vegetation.
 * NIR (Near Infrared) band: This band captures the reflectance of the near-infrared wavelength, which is sensitive to the presence of vegetation and water content. Including the NIR band directly as an input channel provides additional information for the model to learn patterns specific to rice fields.
+
 By incorporating these channels as inputs, the model can learn to detect rice fields more effectively, leveraging the unique spectral characteristics of rice fields in the satellite imagery.
+
 The input images were also normalized to be compatible with the pre-processing steps used during the pre-training of the ResNet-50 model on the ImageNet dataset. This normalization step is crucial to ensure that the fine-tuning process effectively leverages the pre-trained weights for the rice crop detection task.
 
 ## Model
 The model used in this project is based on the ResNet-50 architecture, which is a popular deep learning model known for its ability to achieve high accuracy in various image classification tasks. The ResNet-50 model is composed of 50 layers and utilizes residual connections to facilitate learning by enabling gradients to flow more easily through the network during backpropagation.
+
 The original ResNet-50 model has been fine-tuned specifically for the task of rice crop detection. The output layer of the model was replaced with a new fully connected layer to perform binary classification(Rice and Non-Rice). All layers in the model, except for the last fully connected layer, were frozen during the training.
