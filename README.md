@@ -26,4 +26,7 @@ The original ResNet-50 model has been fine-tuned specifically for the task of ri
 # Results
 1st place of Spain's EY participants. 46th place overall.
 0.95 Accuracy achieved in the final benchmark
-[Certificate](Sergio Muñoz González_Certificate of Completion 2023.pdf)
+
+Certificate (obtained for those who achieved more than 90% of Accuracy in the competition)
+![imagen](https://github.com/SergioMG97/Crop-detection-with-Satellite-data--Computer-Vision-competition/assets/76975149/44ef0b7a-2cdd-44f5-8efc-4a95245ca242)
+
