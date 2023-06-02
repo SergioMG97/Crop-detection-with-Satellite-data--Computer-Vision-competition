@@ -22,3 +22,7 @@ The input images were also normalized to be compatible with the pre-processing s
 The model used in this project is based on the ResNet-50 architecture, which is a popular deep learning model known for its ability to achieve high accuracy in various image classification tasks. The ResNet-50 model is composed of 50 layers and utilizes residual connections to facilitate learning by enabling gradients to flow more easily through the network during backpropagation.
 
 The original ResNet-50 model has been fine-tuned specifically for the task of rice crop detection. The output layer of the model was replaced with a new fully connected layer to perform binary classification(Rice and Non-Rice). All layers in the model, except for the last fully connected layer, were frozen during the training.
+
+# Results
+1st place of Spain's EY participants. 46th place overall.
+0.95 Accuracy achieved in the final benchmark
