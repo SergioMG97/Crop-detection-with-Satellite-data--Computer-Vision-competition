@@ -26,3 +26,4 @@ The original ResNet-50 model has been fine-tuned specifically for the task of ri
 # Results
 1st place of Spain's EY participants. 46th place overall.
 0.95 Accuracy achieved in the final benchmark
+[Certificate](Sergio Muñoz González_Certificate of Completion 2023.pdf)
