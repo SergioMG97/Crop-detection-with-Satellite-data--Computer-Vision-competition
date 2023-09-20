@@ -24,7 +24,7 @@ The model used in this project is based on the ResNet-50 architecture, which is 
 The original ResNet-50 model has been fine-tuned specifically for the task of rice crop detection. The output layer of the model was replaced with a new fully connected layer to perform binary classification(Rice and Non-Rice). All layers in the model, except for the last fully connected layer, were frozen during the training.
 
 # Results
-1st place of Spain's EY participants. 46th place overall.
+1st place of Spain's EY participants. 46th place overall(among more than 1000 participants).
 0.95 Accuracy achieved in the final benchmark
 
 Certificate (obtained for those who achieved more than 90% of Accuracy in the competition)
